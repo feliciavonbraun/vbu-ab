@@ -1,8 +1,10 @@
+import Greeting from "./main/greeting";
+
 
 function Main() {
     return (
         <main>
-
+            <Greeting/>
         </main>
     )
 }
