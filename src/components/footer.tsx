@@ -17,5 +17,7 @@ const footer: CSSProperties = {
     background: 'blue',
     padding: '1rem',
     bottom: '0',
+    display: 'flex',
+    justifyContent: 'center',
 }
 
