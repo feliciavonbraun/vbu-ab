@@ -9,6 +9,7 @@ function Main() {
             <Greeting/>
             <PhotoGallery/>
             <Contact/>
+            {/* <GoogleMap /> */}
         </main>
     )
 }
