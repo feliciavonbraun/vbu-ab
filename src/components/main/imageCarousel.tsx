@@ -48,9 +48,9 @@ function ImageCarousel() {
 export default ImageCarousel;
 
 const StyledH2 = styled.h2`
+  /* background: green; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: green;
-  height: 150px;
+  height: 100px;
 `;

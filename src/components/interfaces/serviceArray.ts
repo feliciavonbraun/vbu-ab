@@ -2,7 +2,7 @@ export interface Service {
   item: string;
 }
 
-const services: Service[] = [
+const services1: Service[] = [
   {
     item: "Sax & Bomlift (Liftutbildningsrådet).",
   },
@@ -43,5 +43,38 @@ const services: Service[] = [
     item: "Säkrare Lyft Iso.",
   },
 ];
+export interface Service2 {
+  item: string;
+}
 
-export default services;
+const services2: Service2[] = [
+  {
+    item: "Allmän Utbildning om Ställning upp till 9 m. (RBK)",
+  },
+  {
+    item: "Krympplast (Bonnington)",
+  },
+  {
+    item: "Väderskydd (Afs 2013:4)",
+  },
+  {
+    item: "HLR med Hjärtstartare (HLR Rådet).",
+  },
+  {
+    item: "Arbete på väg steg 1.1, 1.2, 1.3 och 2.1 (Nivå 1&2)",
+  },
+  {
+    item: "Motorsåg A B.",
+  },
+  {
+    item: "Röjsåg Ra Rb.",
+  },
+  {
+    item: "Bas P U Grund.",
+  },
+  {
+    item: "Bas P U Fördjupning.",
+  },
+];
+
+export { services1, services2 };
