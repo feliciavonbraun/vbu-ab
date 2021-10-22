@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FlexContainer } from "./WrapperElements";
 
@@ -13,11 +12,11 @@ function Footer() {
       >
         <p style={{ marginBottom: "0" }}>
           Kontakts oss <br />{" "}
-          <StyledLink to="mailto:lotta@vonbraunutbildning.se">
+          <StyledA href="mailto:lotta@vonbraunutbildning.se">
             lotta@vonbraunutbildning.se
-          </StyledLink>
+          </StyledA>
           <br />
-          <StyledLink to="tel:+46731519360">+46 (0)73-151 93 60</StyledLink>
+          <StyledA href="tel:+46731519360">+46 (0)73-151 93 60</StyledA>
         </p>
 
         <p>
@@ -29,13 +28,13 @@ function Footer() {
       </FlexContainer>
       <p style={{ margin: "0" }}>
         ©2020 von Braun Utbildning AB |{" "}
-        <StyledLink
-          to="https://feliciavonbraun.netlify.app/"
+        <StyledA
+          href="https://feliciavonbraun.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
           By Felicia von Braun
-        </StyledLink>
+        </StyledA>
       </p>
     </StyledFooter>
   );
@@ -43,6 +42,7 @@ function Footer() {
 export default Footer;
 
 const StyledFooter = styled.footer`
+  background-color: var(--bg-clr);
   padding: 1rem;
   bottom: 0;
   display: flex;
@@ -51,7 +51,7 @@ const StyledFooter = styled.footer`
   flex-direction: column;
 `;
 
-const StyledLink = styled(Link)`
+const StyledA = styled.a`
   color: black;
 
   :visited {
