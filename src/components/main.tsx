@@ -1,6 +1,6 @@
 import Greeting from "./main/greeting";
 import ImageCarousel from "./main/imageCarousel";
-// import Schema from "./main/schema";
+import Schema from "./main/schema";
 import Services from "./main/services";
 // import PhotoGallery from "./main/photoGallery";
 
@@ -11,7 +11,7 @@ function Main() {
       {/* <PhotoGallery/> */}
       <Services />
       <ImageCarousel />
-      {/* <Schema /> */}
+      <Schema />
     </main>
   );
 }

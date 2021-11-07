@@ -1,4 +1,4 @@
-import Stallning from "../../assets/stallning.jpg";
+import scaffolding from "../../assets/scaffolding.jpg";
 
 export interface Gallery {
   image: any;
@@ -11,7 +11,7 @@ const gallerys: Gallery[] = [
     alt: "",
   },
   {
-    image: Stallning,
+    image: scaffolding,
     alt: "",
   },
   {
@@ -19,7 +19,7 @@ const gallerys: Gallery[] = [
     alt: "",
   },
   {
-    image: Stallning,
+    image: scaffolding,
     alt: "",
   },
   {
@@ -27,7 +27,7 @@ const gallerys: Gallery[] = [
     alt: "",
   },
   {
-    image: Stallning,
+    image: scaffolding,
     alt: "",
   },
   {
@@ -35,7 +35,7 @@ const gallerys: Gallery[] = [
     alt: "",
   },
   {
-    image: Stallning,
+    image: scaffolding,
     alt: "",
   },
 ];
