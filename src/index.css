@@ -16,6 +16,7 @@ body {
 }
 
 :root {
-  --bg-clr: white;
-  --primary-crl: #9ad4bf;
+  --bg-clr: #9ad4bf;
+  --primary-clr: #9ad4bf;
+  --focus-clr: #9ad4bf;
 }

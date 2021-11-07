@@ -2,7 +2,7 @@ export interface Service {
   item: string;
 }
 
-const services1: Service[] = [
+const services: Service[] = [
   {
     item: "Sax & Bomlift (Liftutbildningsrådet).",
   },
@@ -42,12 +42,6 @@ const services1: Service[] = [
   {
     item: "Säkrare Lyft Iso.",
   },
-];
-export interface Service2 {
-  item: string;
-}
-
-const services2: Service2[] = [
   {
     item: "Allmän Utbildning om Ställning upp till 9 m. (RBK)",
   },
@@ -75,6 +69,9 @@ const services2: Service2[] = [
   {
     item: "Bas P U Fördjupning.",
   },
+  {
+    item: "YKB",
+  },
 ];
 
-export { services1, services2 };
+export { services };

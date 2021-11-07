@@ -1,38 +1,48 @@
 import HotWork from "../../assets/aman-jakhar.jpg";
 import styled from "styled-components";
-import { services1, services2 } from "../interfaces/serviceArray";
-import { Container } from "../WrapperElements";
+import { services } from "../interfaces/serviceArray";
+import { Container, FlexContainer } from "../WrapperElements";
 
 const Services = () => {
-  services1.sort((a, b) => a.item.localeCompare(b.item));
+  services.sort((a, b) => a.item.localeCompare(b.item));
 
   return (
-    <Container>
+    <Container mainPadding>
       <StyledH2>TJÄNSTER</StyledH2>
       <StyledOurServices>
-        <StyledOneService>
-          <img src={HotWork} width="100%" alt="" />
-          <h2>Utbildningar</h2>
-          <div>
-            <ul>
-              {services1.map((service, index) => (
-                <li key={index}>{service.item}</li>
-              ))}
-            </ul>
-          </div>
-        </StyledOneService>
-
-        <StyledOneService>
-          <img src={HotWork} width="100%" alt="" />
-          <h2>Utbildningar</h2>
-          <div>
-            <ul>
-              {services2.map((service, index) => (
-                <li key={index}>{service.item}</li>
-              ))}
-            </ul>
-          </div>
-        </StyledOneService>
+        <FlexContainer>
+          <img
+            src={HotWork}
+            width="50%"
+            alt=""
+            style={{ paddingRight: "10px" }}
+          />
+          <img
+            src={HotWork}
+            width="50%"
+            alt=""
+            style={{ paddingLeft: "10px" }}
+          />
+        </FlexContainer>
+        <h3>Utbildningar</h3>
+        <div style={{ columns: "2" }}>
+          <ul data-columns="2">
+            {services.map((service, index) => (
+              <li key={index}>{service.item}</li>
+            ))}
+          </ul>
+        </div>
+        <p>
+          <i>
+            Alla utbildare är ackrediterade för att registrera på ID06
+            kompetensdatabas. Enligt de krav som ställs under 2021.
+            <br />
+            Vi håller öppna utbildningar på olika platser i Sverige. Lärarledda
+            webbutbildningar och repetitionsutbildningar, även internutbildning
+            på plats hos kund. Begär offert för mer information.
+          </i>
+        </p>
+        <p></p>
       </StyledOurServices>
     </Container>
   );
@@ -50,14 +60,9 @@ const StyledH2 = styled.h2`
 const StyledOurServices = styled.div`
   /* background: red; */
   display: flex;
-  justify-content: space-evenly;
-  padding: 20px;
-`;
-
-const StyledOneService = styled.div`
-  /* background: blue; */
-  display: flex;
   flex-direction: column;
-  width: 45%;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
   line-height: 35px;
 `;

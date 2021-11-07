@@ -4,7 +4,7 @@ import { Container, FlexContainer } from "./WrapperElements";
 function Footer() {
   return (
     <StyledFooter>
-      <Container mainPaddingX>
+      <Container mainPadding>
         <FlexContainer
           fullWidth
           style={{
