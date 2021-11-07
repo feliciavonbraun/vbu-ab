@@ -17,7 +17,7 @@ function Footer() {
               lotta@vonbraunutbildning.se
             </StyledA>
             <br />
-            <StyledA href="tel:+46731519360">+46 (0)73-151 93 60</StyledA>
+            <StyledA href="tel:+46739519360">+46 (0)73-151 93 60</StyledA>
           </p>
 
           <p>
@@ -57,7 +57,7 @@ const StyledA = styled.a`
   }
 
   :hover {
-    color: var(--primary-clr);
+    color: var(--focus-clr);
   }
 `;
 

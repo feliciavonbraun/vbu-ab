@@ -1,4 +1,8 @@
-import scaffolding from "../../assets/scaffolding.jpg";
+import Gallery1 from "../../assets/gallery/gallery1.jpeg";
+import Gallery2 from "../../assets/gallery/gallery2.jpeg";
+import Gallery3 from "../../assets/gallery/gallery3.jpeg";
+import Gallery4 from "../../assets/gallery/gallery4.jpeg";
+import Gallery5 from "../../assets/gallery/gallery5.jpeg";
 
 export interface Gallery {
   image: any;
@@ -7,35 +11,23 @@ export interface Gallery {
 
 const gallerys: Gallery[] = [
   {
-    image: "https://wallpaperaccess.com/full/1154366.jpg",
+    image: Gallery1,
     alt: "",
   },
   {
-    image: scaffolding,
+    image: Gallery2,
     alt: "",
   },
   {
-    image: "https://wallpaperaccess.com/full/1154366.jpg",
+    image: Gallery3,
     alt: "",
   },
   {
-    image: scaffolding,
+    image: Gallery4,
     alt: "",
   },
   {
-    image: "https://wallpaperaccess.com/full/1154366.jpg",
-    alt: "",
-  },
-  {
-    image: scaffolding,
-    alt: "",
-  },
-  {
-    image: "https://wallpaperaccess.com/full/1154366.jpg",
-    alt: "",
-  },
-  {
-    image: scaffolding,
+    image: Gallery5,
     alt: "",
   },
 ];

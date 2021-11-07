@@ -4,7 +4,6 @@ import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 
 // import { Box, createStyles, makeStyles, Theme, } from "@mui/material";
-import styled from "styled-components";
 import gallerys from "../interfaces/galleryArray";
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -36,7 +35,7 @@ function ImageCarousel() {
 
   return (
     <Box className={classes.root}>
-      <StyledH2>GALLRI</StyledH2>
+      <h2>GALLRI</h2>
       <GridList className={classes.gridList} cols={4}>
         {gallerys.map((gallery, index) => (
           <GridListTile key={index}>
@@ -48,11 +47,3 @@ function ImageCarousel() {
   );
 }
 export default ImageCarousel;
-
-const StyledH2 = styled.h2`
-  /* background: green; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-`;

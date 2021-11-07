@@ -15,8 +15,16 @@ body {
   box-sizing: border-box;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 0;
+}
+
 :root {
   --bg-clr: #9ad4bf;
   --primary-clr: #9ad4bf;
-  --focus-clr: #9ad4bf;
+  --focus-clr: #ffffff;
 }

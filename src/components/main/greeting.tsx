@@ -1,5 +1,5 @@
 // import { CSSProperties } from "react";
-import Scaffolding from "../../assets/scaffolding.jpg";
+// import Scaffolding from "../../assets/pexelsStallning.jpg";
 import styled from "styled-components";
 import Email from "../../assets/email.svg";
 import Phone from "../../assets/phone.svg";
@@ -11,20 +11,20 @@ function Greeting() {
       <StyledAboutUs>
         <h2>KONTAKTA OSS</h2>
         <p>
-          “Vi arbetar för att alla ska få en säker arbetsplats & att alla får
+          “Vi arbetar för att alla ska få en säker arbetsplats & att alla ska få
           möjligheten att komma hem oskadda”
         </p>
         <FlexContainer centered>
           <StyledA href="mailto:lotta@vonbraunutbildning.se">
             <img src={Email} alt="" width="50%" />
           </StyledA>
-          <StyledA href="tel:+46731519360">
+          <StyledA href="tel:+46739519360">
             <img src={Phone} alt="" width="50%" />
           </StyledA>
         </FlexContainer>
       </StyledAboutUs>
       {/* <div style={middleImg}> */}
-      <img src={Scaffolding} height="100%" width="100%" alt="A scaffolding" />
+      {/* <img src={Scaffolding} height="100%" width="100%" alt="A scaffolding" /> */}
       {/* </div> */}
     </Container>
   );
