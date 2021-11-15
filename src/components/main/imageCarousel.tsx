@@ -35,7 +35,7 @@ function ImageCarousel() {
 
   return (
     <Box className={classes.root}>
-      <h2>GALLRI</h2>
+      <h2>GALLERI</h2>
       <GridList className={classes.gridList} cols={4}>
         {gallerys.map((gallery, index) => (
           <GridListTile key={index}>

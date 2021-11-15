@@ -7,7 +7,7 @@ const Container = styled.div<{
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  ${({ fullWidth }) => !fullWidth && `max-width: 1400px;`}
+  ${({ fullWidth }) => !fullWidth && `max-width: 2000px;`}
   ${({ mainPadding }) => mainPadding && `padding: 20px 40px`}
 `;
 
