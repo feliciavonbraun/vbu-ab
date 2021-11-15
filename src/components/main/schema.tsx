@@ -94,40 +94,40 @@ function createData(
 
 const rows = [
   createData(
-    "Måndag",
-    "8 / 11 - 21",
-    "08.00 - ca 15.00",
-    "Allmän Ställningsutbildning",
-    "Göteborg"
-  ),
-  createData(
-    "Tisdag",
-    "9 / 11 - 21",
-    "08.00 - ca 15.00",
-    "Heta Arbeten",
-    "Göteborg"
+    "Onsdag",
+    "8/12 - 21",
+    "08.00 - ca 12.00",
+    "Sax & Bomlift repetition",
+    "Lärarledd webb"
   ),
   createData(
     "Onsdag",
-    "10 / 11 - 21",
-    "08.00 - ca 15.00",
-    "Sax & Bomlift utbildning",
-    "Göteborg"
-  ),
-  createData(
-    "Torsdag",
-    "11 / 11 - 21",
-    "08.00 - ca 12.00",
-    "Fallskyddsutbildning gr.",
-    "Göteborg"
-  ),
-  createData(
-    "Torsdag",
-    "11 / 11 - 21",
+    "8/12 - 21",
     "12.30 - ca 16.00",
-    "Säkra lyft / Traversutbildning",
-    "Göteborg"
+    "Fallskyddsutbildning grund ",
+    "Lärarledd webb"
   ),
+  createData(
+    "Torsdag",
+    "9/12 - 21",
+    "08.00 - ca 13.00",
+    "Heta arbeten",
+    "Lärarledd webb"
+  ),
+  // createData(
+  //   "Torsdag",
+  //   "11 / 11 - 21",
+  //   "08.00 - ca 12.00",
+  //   "Fallskyddsutbildning gr.",
+  //   "Göteborg"
+  // ),
+  // createData(
+  //   "Torsdag",
+  //   "11 / 11 - 21",
+  //   "12.30 - ca 16.00",
+  //   "Säkra lyft / Traversutbildning",
+  //   "Göteborg"
+  // ),
 ];
 
 export default function BasicTable() {
@@ -136,7 +136,7 @@ export default function BasicTable() {
       <TableContainer component={Paper}>
         <FlexContainer centered>
           {/* <ArrowBackIosNewIcon /> */}
-          <h2>SCHEMA v.45</h2>
+          <h2>SCHEMA v.49</h2>
           {/* <ArrowForwardIosIcon /> */}
         </FlexContainer>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -146,7 +146,7 @@ export default function BasicTable() {
               <TableCell align="left">DATUM</TableCell>
               <TableCell align="left">TID</TableCell>
               <TableCell align="left">UTBILDNING</TableCell>
-              <TableCell align="left">PLAST</TableCell>
+              <TableCell align="left">PLATS</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
