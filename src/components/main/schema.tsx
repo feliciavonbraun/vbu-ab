@@ -83,10 +83,10 @@ import Paper from "@mui/material/Paper";
 import { Container, FlexContainer } from "../WrapperElements";
 
 function createData(
+  service: string,
   day: string,
   date: string,
   time: string,
-  service: string,
   location: string
 ) {
   return { day, date, time, service, location };
@@ -94,24 +94,24 @@ function createData(
 
 const rows = [
   createData(
+    "Sax & Bomlift repetition",
     "Onsdag",
     "8/12 - 21",
     "08.00 - ca 12.00",
-    "Sax & Bomlift repetition",
     "Lärarledd webb"
   ),
   createData(
+    "Fallskyddsutbildning grund ",
     "Onsdag",
     "8/12 - 21",
     "12.30 - ca 16.00",
-    "Fallskyddsutbildning grund ",
     "Lärarledd webb"
   ),
   createData(
+    "Heta arbeten",
     "Torsdag",
     "9/12 - 21",
     "08.00 - ca 13.00",
-    "Heta arbeten",
     "Lärarledd webb"
   ),
   // createData(
@@ -134,18 +134,18 @@ export default function BasicTable() {
   return (
     <Container mainPadding>
       <TableContainer component={Paper}>
-        <FlexContainer centered>
+        <FlexContainer centeredAlign centeredJusitify>
           {/* <ArrowBackIosNewIcon /> */}
-          <h2>SCHEMA v.49</h2>
+          <h2>WEBBUTBILDNING v.49</h2>
           {/* <ArrowForwardIosIcon /> */}
         </FlexContainer>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>DAG</TableCell>
+              <TableCell>UTBILDNING</TableCell>
+              <TableCell align="left">DAG</TableCell>
               <TableCell align="left">DATUM</TableCell>
               <TableCell align="left">TID</TableCell>
-              <TableCell align="left">UTBILDNING</TableCell>
               <TableCell align="left">PLATS</TableCell>
             </TableRow>
           </TableHead>
@@ -156,11 +156,11 @@ export default function BasicTable() {
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
-                  {row.day}
+                  {row.service}{" "}
                 </TableCell>
+                <TableCell align="left">{row.day}</TableCell>
                 <TableCell align="left">{row.date}</TableCell>
                 <TableCell align="left">{row.time}</TableCell>
-                <TableCell align="left">{row.service}</TableCell>
                 <TableCell align="left">{row.location}</TableCell>
               </TableRow>
             ))}

@@ -6,13 +6,12 @@ function Footer() {
     <StyledFooter>
       <Container mainPadding>
         <FlexContainer
-          fullWidth
           style={{
             justifyContent: "space-between",
           }}
         >
           <p style={{ marginBottom: "0" }}>
-            Kontakts oss <br /> von Braun Utbildning AB <br />
+            Kontakta oss <br /> von Braun Utbildning AB <br />
             <StyledA href="mailto:lotta@vonbraunutbildning.se">
               lotta@vonbraunutbildning.se
             </StyledA>

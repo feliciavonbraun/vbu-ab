@@ -2,7 +2,7 @@ import HotWork from "../../assets/danial-abdullah.jpg";
 import Forklift from "../../assets/justus-menke.jpg";
 import styled from "styled-components";
 import { services } from "../interfaces/serviceArray";
-import { Container, FlexContainer } from "../WrapperElements";
+import { FlexContainer } from "../WrapperElements";
 
 import Tooltip from "@mui/material/Tooltip";
 import Fade from "@mui/material/Fade";
@@ -13,7 +13,7 @@ const Services = () => {
   services.sort((a, b) => a.item.localeCompare(b.item));
 
   return (
-    <Container mainPadding>
+    <FlexContainer mainPadding centeredJusitify>
       <StyledOurServices>
         <FlexContainer>
           <Tooltip
@@ -61,7 +61,7 @@ const Services = () => {
         </p>
         <p></p>
       </StyledOurServices>
-    </Container>
+    </FlexContainer>
   );
 };
 export default Services;
@@ -70,8 +70,5 @@ const StyledOurServices = styled.div`
   /* background: red; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  width: 100%;
   line-height: 35px;
 `;
