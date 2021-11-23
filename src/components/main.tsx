@@ -1,4 +1,4 @@
-import Greeting from "./main/greeting";
+import Greeting from "./main/contact";
 import ImageCarousel from "./main/imageCarousel";
 import Schema from "./main/schema";
 import Services from "./main/services";
