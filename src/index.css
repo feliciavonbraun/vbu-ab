@@ -26,9 +26,10 @@ h2 {
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-blue: #9ad4bf;
+  --color-green: #7fc300;
+  --color-gray: #9d9d9c;
 
-  --bg-clr: var(--color-blue);
-  --primary-clr: var(--color-blue);
+  --bg-clr: var(--color-green);
+  --primary-clr: var(--color-green);
   --focus-clr: var(--color-white);
 }

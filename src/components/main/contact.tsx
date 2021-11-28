@@ -53,12 +53,14 @@ export default Greeting;
 const StyledSlogan = styled.div`
   padding-right: 30px;
   text-align: justify;
-  line-height: 30px;
+  line-height: 40px;
+  font-size: medium;
 `;
 
 const StyledContactDetails = styled.div`
   padding-left: 30px;
   border-left: solid black 0.25px;
+  font-size: medium;
 `;
 
 const StyledA = styled.a`

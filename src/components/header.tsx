@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import Scaffolding from "../assets/scaffolding.jpg";
+import LogoWeb from "../assets/Logo_WEB.svg";
 
 function Header() {
   return (
     <StyledContainer>
-      <StyledLogoContainer>von Braun Utbildning</StyledLogoContainer>
+      <StyledLogoContainer>
+        <img src={LogoWeb} alt="Logo" />
+      </StyledLogoContainer>
     </StyledContainer>
   );
 }
@@ -23,10 +26,8 @@ const StyledContainer = styled.header`
 `;
 
 const StyledLogoContainer = styled.div`
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.351);
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 `;

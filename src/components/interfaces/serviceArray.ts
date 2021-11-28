@@ -4,10 +4,7 @@ export interface Service {
 
 const services: Service[] = [
   {
-    item: "Sax & Bomlift (Liftutbildningsrådet).",
-  },
-  {
-    item: "Sax & Bomlift utbildning Repetitionsutbildning & Lärarledd webbutbildning.",
+    item: "Sax & Bomlift (Liftutbildningsrådet) / Repetitionsutbildning.",
   },
   {
     item: "Fallskydd Grund.",
@@ -26,9 +23,6 @@ const services: Service[] = [
   },
   {
     item: "Heta Arbeten (Brandskyddsföreningen).",
-  },
-  {
-    item: "Heta Arbeten Repetitionsutbildning & Lärarledd webbutbildning.",
   },
   {
     item: "Teleskoplastare C7 (Tya).",

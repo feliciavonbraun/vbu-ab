@@ -27,7 +27,7 @@ function Footer() {
           </p>
         </FlexContainer>
         <StyledP>
-          ©2020 von Braun Utbildning AB |<span>&nbsp;</span>
+          ©2021 von Braun Utbildning AB |<span>&nbsp;</span>
           <StyledA
             href="https://feliciavonbraun.netlify.app/"
             target="_blank"
