@@ -1,6 +1,6 @@
 import Greeting from "./main/contact";
 import ImageCarousel from "./main/imageCarousel";
-import Schema from "./main/schema";
+import Schedule from "./main/schedule";
 import Services from "./main/services";
 import { Container } from "./WrapperElements";
 
@@ -17,7 +17,7 @@ function Main() {
         <Greeting />
         <Services />
         <ImageCarousel />
-        <Schema />
+        <Schedule />
       </Container>
     </main>
   );
