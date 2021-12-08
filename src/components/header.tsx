@@ -21,8 +21,8 @@ const StyledContainer = styled.header`
   width: 100%;
   height: 100vh;
 
-  display: flex;
-  justify-content: end;
+  /* display: flex; */
+  /* justify-content: end; */
 `;
 
 const StyledLogoContainer = styled.div`
