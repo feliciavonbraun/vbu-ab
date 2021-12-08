@@ -68,8 +68,8 @@ function Schedule() {
               onChange={handleChange}
               aria-label="basic tabs example"
             >
-              <Tab label="v.49" {...a11yProps(0)} />
-              <Tab label="v.51" {...a11yProps(1)} />
+              <Tab label="v.51" {...a11yProps(0)} />
+              <Tab label="v.3" {...a11yProps(1)} />
               {/* <Tab label="Item Three" {...a11yProps(2)} /> */}
             </Tabs>
           </Box>

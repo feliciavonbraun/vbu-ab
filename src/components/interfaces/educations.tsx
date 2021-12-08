@@ -10,49 +10,25 @@ function createData(
 
 const educations1 = [
   createData(
-    "Sax & Bomlift repetition",
-    "Onsdag",
-    "8/12 - 21",
-    "08.00 - ca 12.00",
-    "Lärarledd webb"
-  ),
-  createData(
-    "Fallskyddsutbildning grund ",
-    "Onsdag",
-    "8/12 - 21",
-    "12.30 - ca 16.00",
-    "Lärarledd webb"
-  ),
-  createData(
     "Heta arbeten",
-    "Torsdag",
-    "9/12 - 21",
-    "08.00 - ca 13.00",
-    "Lärarledd webb"
-  ),
-];
-
-const educations2 = [
-  createData(
-    "Heta Arbeten",
     "Måndag",
     "20/12 - 21",
     "08.00 - ca 15.00",
-    "Lärarledd webb"
+    "Göteborg"
   ),
   createData(
     "Truck dag 1",
     "Måndag",
     "20/12 - 21",
-    "12.30 - ca 15.00",
-    "Lärarledd webb"
+    "08.00 - ca 15.00",
+    "Göteborg"
   ),
   createData(
     "Sax & Bomlift",
     "Tisdag",
     "21/12 - 21",
     "08.00 - ca 15.00",
-    "Lärarledd webb"
+    "Göteborg"
   ),
   createData(
     "Truck dag 2",
@@ -74,6 +50,37 @@ const educations2 = [
     "22/12 - 21",
     "12.30 - ca 16.00",
     "Göteborg"
+  ),
+];
+
+const educations2 = [
+  createData(
+    "Heta arbeten",
+    "Tisdag",
+    "18/1 - 22",
+    "08.00 - ca 13.00",
+    "Lärarledd webb"
+  ),
+  createData(
+    "Sax & Bomlift repetition",
+    "Onsdag",
+    "19/1 - 22",
+    "08.00 - ca 12.00",
+    "Lärarledd webb"
+  ),
+  createData(
+    "Fallskyddsutbildning grund",
+    "Onsdag",
+    "19/1 - 22",
+    "12.30 - ca 16.00",
+    "Lärarledd webb"
+  ),
+  createData(
+    "Säkra lyft",
+    "Torsdag",
+    "20/1 - 22",
+    "08.00 - ca 12.00",
+    "Lärarledd webb"
   ),
 ];
 
