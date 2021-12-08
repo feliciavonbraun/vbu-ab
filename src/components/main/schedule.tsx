@@ -59,7 +59,7 @@ function Schedule() {
     <Container mainPadding>
       <TableContainer component={Paper}>
         <FlexContainer centeredAlign centeredJusitify>
-          <h2>WEBBUTBILDNING</h2>
+          <h2>KOMMANDE UTBILDNINGAR</h2>
         </FlexContainer>
         <Box sx={{ width: "100%" }}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
