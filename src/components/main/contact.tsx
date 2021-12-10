@@ -4,7 +4,7 @@ import Phone from "../../assets/phone.svg";
 import Person from "../../assets/person.svg";
 import { Container } from "../WrapperElements";
 
-function Greeting() {
+function Contact() {
   return (
     <Container mainPadding>
       <h2>KONTAKTA OSS</h2>
@@ -48,7 +48,7 @@ function Greeting() {
     </Container>
   );
 }
-export default Greeting;
+export default Contact;
 
 const StyledSlogan = styled.div`
   padding-right: 30px;

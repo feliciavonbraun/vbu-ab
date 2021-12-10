@@ -1,4 +1,4 @@
-import Greeting from "./main/contact";
+import Contact from "./main/contact";
 import ImageCarousel from "./main/imageCarousel";
 import Schedule from "./main/schedule";
 import Services from "./main/services";
@@ -14,10 +14,18 @@ function Main() {
       }}
     >
       <Container style={{ maxWidth: "2500px" }}>
-        <Greeting />
-        <Services />
-        <ImageCarousel />
-        <Schedule />
+        <section id="contact">
+          <Contact />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="imageCarousel">
+          <ImageCarousel />
+        </section>
+        <section id="schedule">
+          <Schedule />
+        </section>
       </Container>
     </main>
   );

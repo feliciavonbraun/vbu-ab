@@ -5,7 +5,9 @@ import Main from "./main";
 function Layout() {
   return (
     <div>
-      <Header />
+      <section id="header">
+        <Header />
+      </section>
       <Main />
       <Footer />
     </div>
