@@ -13,6 +13,7 @@ body {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -26,10 +27,10 @@ h2 {
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-green: #7fc300;
-  --color-gray: #9d9d9c;
+  --color-green: #589460;
+  --color-gray: #617165;
 
-  --bg-clr: var(--color-green);
+  --bg-clr: var(--color-gray);
   --primary-clr: var(--color-green);
-  --focus-clr: var(--color-white);
+  --focus-clr: var(--color-green);
 }
