@@ -22,7 +22,7 @@ function Footer() {
           <p>
             I samarbete med: <br />
             Berrys Truck AB, <br />
-            Greger Utbildningskonsult <br />
+            Greger Utbildningskonsult, <br />
             Bonnington mf utbildningföretag.
           </p>
         </FlexContainer>

@@ -55,6 +55,10 @@ const StyledNav = styled.nav`
   z-index: 1;
 
   justify-content: space-between;
+
+  @media screen and (max-width: 950px) {
+    display: none;
+  }
 `;
 
 const StyledUL = styled.ul`
@@ -79,7 +83,6 @@ const StyledContainer = styled.header`
   background-position-y: bottom;
   width: 100%;
   height: 100vh;
-  margin: 0;
 
   /* display: flex; */
   /* justify-content: end; */
@@ -87,7 +90,11 @@ const StyledContainer = styled.header`
 
 const StyledLogoContainer = styled.div`
   background: rgba(255, 255, 255, 0.351);
+  display: flex;
   width: 50%;
   height: 100%;
-  display: flex;
+
+  @media screen and (max-width: 950px) {
+    width: 100%;
+  }
 `;

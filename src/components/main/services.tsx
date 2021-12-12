@@ -43,12 +43,13 @@ const Services = () => {
         </FlexContainer>
         <h2>UTBILDNINGAR</h2>
         <div style={{ columns: "2" }}>
-          <ul>
+          <StyledUL>
             {services.map((service, index) => (
               <li key={index}>{service.item}</li>
             ))}
-          </ul>
+          </StyledUL>
         </div>
+
         <p>
           <i>
             Alla utbildare är ackrediterade för att registrera på ID06
@@ -71,4 +72,10 @@ const StyledOurServices = styled.div`
   display: flex;
   flex-direction: column;
   line-height: 35px;
+`;
+
+const StyledUL = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 `;

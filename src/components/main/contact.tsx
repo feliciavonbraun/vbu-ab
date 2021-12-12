@@ -8,12 +8,7 @@ function Contact() {
   return (
     <Container mainPadding>
       <h2>KONTAKTA OSS</h2>
-      <Container
-        style={{
-          display: "grid",
-          gridTemplateColumns: "16.6% 33.3% 50%",
-        }}
-      >
+      <StyledContactArea>
         <div></div>
         <StyledSlogan>
           <p>
@@ -30,25 +25,35 @@ function Contact() {
             Säljare/Samordnare Lotta von Braun
           </p>
 
-          <p style={{ margin: "10px 0" }}>
+          <StyledP>
             <StyledA href="tel:+46739519360">
               <img src={Phone} alt="" width="5%" />
             </StyledA>{" "}
             +46 073-951 93 60
-          </p>
+          </StyledP>
 
-          <p style={{ margin: "10px 0" }}>
+          <StyledP>
             <StyledA href="mailto:lotta@vonbraunutbildning.se">
               <img src={Email} alt="" width="5%" />
             </StyledA>{" "}
             lotta@vonbraunutbildning.se
-          </p>
+          </StyledP>
         </StyledContactDetails>
-      </Container>
+      </StyledContactArea>
     </Container>
   );
 }
 export default Contact;
+
+const StyledContactArea = styled.div`
+  display: grid;
+  grid-template-columns: 16.6% 33.3% 50%;
+
+  @media screen and (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
 
 const StyledSlogan = styled.div`
   padding-right: 30px;
@@ -63,10 +68,16 @@ const StyledContactDetails = styled.div`
   font-size: medium;
 `;
 
-const StyledA = styled.a`
-  vertical-align: middle;
+const StyledP = styled.p`
+  margin: 10px 0;
 
   :hover {
-    transform: scale(1.3); // scale needs a display property
+    transform: scale(1.06) translate(2%);
+    color: var(--focus-clr);
+    cursor: pointer;
   }
+`;
+
+const StyledA = styled.a`
+  vertical-align: middle;
 `;
