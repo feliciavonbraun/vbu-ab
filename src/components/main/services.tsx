@@ -41,7 +41,7 @@ const Services = () => {
             />
           </Tooltip>
         </FlexContainer>
-        <h2>UTBILDNINGAR</h2>
+        <h2 id="services">UTBILDNINGAR</h2>
         <div style={{ columns: "2" }}>
           <StyledUL>
             {services.map((service, index) => (

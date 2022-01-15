@@ -31,9 +31,9 @@ function Header() {
           </StyledUL>
         </FlexContainer>
       </StyledNav>
-      <StyledContainer id="back-to-top-anchor">
+      <StyledContainer>
         <StyledLogoContainer>
-          <img src={LogoWeb} alt="Logo" />
+          <img src={LogoWeb} alt="Logo" width="100%" />
         </StyledLogoContainer>
       </StyledContainer>
     </Container>
@@ -42,19 +42,18 @@ function Header() {
 export default Header;
 
 const StyledNav = styled.nav`
-  background: var(--color-gray);
-  position: fixed;
   /* display: grid; */
   /* grid-template-columns: 3fr 1fr 1fr 1fr 1fr; */
+  background: var(--color-gray);
+  position: fixed;
+  top: 0;
   display: flex;
-
+  justify-content: space-between;
   width: 100%;
   height: 70px;
   align-items: center;
   padding: 0 40px;
   z-index: 1;
-
-  justify-content: space-between;
 
   @media screen and (max-width: 950px) {
     display: none;

@@ -7,7 +7,7 @@ import { Container } from "../WrapperElements";
 function Contact() {
   return (
     <Container mainPadding>
-      <h2>KONTAKTA OSS</h2>
+      <h2 id="contact">KONTAKTA OSS</h2>
       <StyledContactArea>
         <div></div>
         <StyledSlogan>
@@ -20,21 +20,21 @@ function Contact() {
         <StyledContactDetails>
           <p style={{ margin: "20px 0 10px 0" }}>
             <StyledA>
-              <img src={Person} alt="" width="5%" />
+              <img src={Person} alt="Symbol of person" width="5%" />
             </StyledA>{" "}
             Säljare/Samordnare Lotta von Braun
           </p>
 
           <StyledP>
             <StyledA href="tel:+46739519360">
-              <img src={Phone} alt="" width="5%" />
+              <img src={Phone} alt="Symbol of phone" width="5%" />
             </StyledA>{" "}
             +46 073-951 93 60
           </StyledP>
 
           <StyledP>
             <StyledA href="mailto:lotta@vonbraunutbildning.se">
-              <img src={Email} alt="" width="5%" />
+              <img src={Email} alt="Symbol of email" width="5%" />
             </StyledA>{" "}
             lotta@vonbraunutbildning.se
           </StyledP>
@@ -58,7 +58,7 @@ const StyledContactArea = styled.div`
 const StyledSlogan = styled.div`
   padding-right: 30px;
   text-align: justify;
-  line-height: 40px;
+  line-height: 190%;
   font-size: medium;
 `;
 
@@ -66,6 +66,7 @@ const StyledContactDetails = styled.div`
   padding-left: 30px;
   border-left: solid black 0.25px;
   font-size: medium;
+  line-height: 190%;
 `;
 
 const StyledP = styled.p`

@@ -14,18 +14,10 @@ function Main() {
       }}
     >
       <Container style={{ maxWidth: "2500px" }}>
-        <section id="contact">
-          <Contact />
-        </section>
-        <section id="services">
-          <Services />
-        </section>
-        <section id="imageCarousel">
-          <ImageCarousel />
-        </section>
-        <section id="schedule">
-          <Schedule />
-        </section>
+        <Contact />
+        <Services />
+        <ImageCarousel />
+        <Schedule />
       </Container>
     </main>
   );
