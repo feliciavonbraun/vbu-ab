@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <FlexContainer mainPadding centeredJusitify>
       <StyledOurServices>
-        <FlexContainer>
+        <StyledBigPhotos>
           <Tooltip
             TransitionComponent={Fade}
             TransitionProps={{ timeout: 600 }}
@@ -40,15 +40,15 @@ const Services = () => {
               style={{ paddingLeft: "10px" }}
             />
           </Tooltip>
-        </FlexContainer>
+        </StyledBigPhotos>
         <h2 id="services">UTBILDNINGAR</h2>
-        <div style={{ columns: "2" }}>
+        <StyledServieList>
           <StyledUL>
             {services.map((service, index) => (
               <li key={index}>{service.item}</li>
             ))}
           </StyledUL>
-        </div>
+        </StyledServieList>
 
         <p>
           <i>
@@ -72,6 +72,22 @@ const StyledOurServices = styled.div`
   display: flex;
   flex-direction: column;
   line-height: 35px;
+`;
+
+const StyledBigPhotos = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 950px) {
+    display: none;
+  }
+`;
+
+const StyledServieList = styled.div`
+  columns: 2;
+
+  @media screen and (max-width: 950px) {
+    columns: 1;
+  }
 `;
 
 const StyledUL = styled.ul`

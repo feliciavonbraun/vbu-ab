@@ -1,15 +1,11 @@
 import styled from "styled-components";
-import { Container, FlexContainer } from "./WrapperElements";
+import { Container } from "./WrapperElements";
 
 function Footer() {
   return (
     <StyledFooter>
       <Container mainPadding>
-        <FlexContainer
-          style={{
-            justifyContent: "space-between",
-          }}
-        >
+        <StyledMainContent>
           <p style={{ marginBottom: "0" }}>
             Kontakta oss <br /> von Braun Utbildning AB <br />
             <StyledA href="mailto:lotta@vonbraunutbildning.se">
@@ -25,9 +21,9 @@ function Footer() {
             Greger Utbildningskonsult, <br />
             Bonnington mf utbildningföretag.
           </p>
-        </FlexContainer>
+        </StyledMainContent>
         <StyledP>
-          ©2021 von Braun Utbildning AB |<span>&nbsp;</span>
+          ©2022 von Braun Utbildning AB |<span>&nbsp;</span>
           <StyledA
             href="https://feliciavonbraun.netlify.app/"
             target="_blank"
@@ -44,7 +40,17 @@ export default Footer;
 
 const StyledFooter = styled.footer`
   background-color: var(--bg-clr);
-  flex-direction: column;
+`;
+
+const StyledMainContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const StyledA = styled.a`

@@ -50,8 +50,7 @@ const StyledContactArea = styled.div`
   grid-template-columns: 16.6% 33.3% 50%;
 
   @media screen and (max-width: 950px) {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -67,6 +66,11 @@ const StyledContactDetails = styled.div`
   border-left: solid black 0.25px;
   font-size: medium;
   line-height: 190%;
+
+  @media screen and (max-width: 950px) {
+    border-left: none;
+    padding-left: 0;
+  }
 `;
 
 const StyledP = styled.p`
