@@ -13,7 +13,12 @@ import TableCell from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 
-import { educations1, educations2 } from "../interfaces/educations";
+import {
+  educations1,
+  educations2,
+  educations3,
+  educations4,
+} from "../interfaces/educations";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -70,8 +75,11 @@ function Schedule() {
             >
               <Tab label="v.3" {...a11yProps(0)} />
               <Tab label="v.4" {...a11yProps(1)} />
+              <Tab label="v.6" {...a11yProps(2)} />
+              <Tab label="v.8" {...a11yProps(3)} />
             </Tabs>
           </Box>
+
           <TabPanel value={value} index={0}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
@@ -101,6 +109,7 @@ function Schedule() {
               </TableBody>
             </Table>
           </TabPanel>
+
           <TabPanel value={value} index={1}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
@@ -130,9 +139,66 @@ function Schedule() {
               </TableBody>
             </Table>
           </TabPanel>
-          {/* <TabPanel value={value} index={2}>
-            Item Three
-          </TabPanel> */}
+
+          <TabPanel value={value} index={2}>
+            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+              <TableHead>
+                <TableRow>
+                  <TableCell>UTBILDNING</TableCell>
+                  <TableCell align="left">DAG</TableCell>
+                  <TableCell align="left">DATUM</TableCell>
+                  <TableCell align="left">TID</TableCell>
+                  <TableCell align="left">PLATS</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {educations3.map((education) => (
+                  <TableRow
+                    key={education.day}
+                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  >
+                    <TableCell component="th" scope="row">
+                      {education.service}{" "}
+                    </TableCell>
+                    <TableCell align="left">{education.day}</TableCell>
+                    <TableCell align="left">{education.date}</TableCell>
+                    <TableCell align="left">{education.time}</TableCell>
+                    <TableCell align="left">{education.location}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TabPanel>
+
+          <TabPanel value={value} index={3}>
+            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+              <TableHead>
+                <TableRow>
+                  <TableCell>UTBILDNING</TableCell>
+                  <TableCell align="left">DAG</TableCell>
+                  <TableCell align="left">DATUM</TableCell>
+                  <TableCell align="left">TID</TableCell>
+                  <TableCell align="left">PLATS</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {educations4.map((education) => (
+                  <TableRow
+                    key={education.day}
+                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  >
+                    <TableCell component="th" scope="row">
+                      {education.service}{" "}
+                    </TableCell>
+                    <TableCell align="left">{education.day}</TableCell>
+                    <TableCell align="left">{education.date}</TableCell>
+                    <TableCell align="left">{education.time}</TableCell>
+                    <TableCell align="left">{education.location}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TabPanel>
         </Box>
       </TableContainer>
     </Container>
