@@ -8,37 +8,6 @@ function createData(
   return { day, date, time, service, location };
 }
 
-const educations1 = [
-  createData(
-    "Heta arbeten",
-    "Tisdag",
-    "18/1 - 22",
-    "08.00 - ca 13.00",
-    "Lärarledd webb"
-  ),
-  createData(
-    "Sax & Bomlift repetition",
-    "Onsdag",
-    "19/1 - 22",
-    "08.00 - ca 12.00",
-    "Lärarledd webb"
-  ),
-  createData(
-    "Fallskyddsutbildning grund",
-    "Onsdag",
-    "19/1 - 22",
-    "12.30 - ca 16.00",
-    "Lärarledd webb"
-  ),
-  createData(
-    "Säkra lyft",
-    "Torsdag",
-    "20/1 - 22",
-    "08.00 - ca 12.00",
-    "Lärarledd webb"
-  ),
-];
-
 const educations2 = [
   createData(
     "Allmän Ställningsutbildning",
@@ -154,4 +123,4 @@ const educations4 = [
   ),
 ];
 
-export { educations1, educations2, educations3, educations4 };
+export { educations2, educations3, educations4 };
