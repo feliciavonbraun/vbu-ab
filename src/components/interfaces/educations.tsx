@@ -24,7 +24,7 @@ const educations2 = [
     "Skene"
   ),
   createData(
-    "Sax & Bomlift",
+    "Sax & Bomlift FULLT",
     "Onsdag",
     "26/1 - 22",
     "08.00 - ca 15.00",
@@ -38,6 +38,13 @@ const educations2 = [
     "Skene"
   ),
   createData("Säkra lyft", "Torsdag", "27/1 - 22", "12.30 - ca 16.00", "Skene"),
+  createData(
+    "Sax & Bomlift",
+    "Fredag",
+    "28/1 - 22",
+    "08.00 - ca 15.00",
+    "Skene"
+  ),
 ];
 
 const educations3 = [
