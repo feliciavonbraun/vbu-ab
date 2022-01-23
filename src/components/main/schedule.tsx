@@ -92,7 +92,7 @@ function Schedule() {
               <TableBody>
                 {educations2.map((education) => (
                   <TableRow
-                    key={education.day}
+                    key={education.service}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
@@ -122,7 +122,7 @@ function Schedule() {
               <TableBody>
                 {educations3.map((education) => (
                   <TableRow
-                    key={education.day}
+                    key={education.service}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
@@ -152,7 +152,7 @@ function Schedule() {
               <TableBody>
                 {educations4.map((education) => (
                   <TableRow
-                    key={education.day}
+                    key={education.service}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
