@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import Footer from "./footer";
 import Header from "./header";
 import Main from "./main";
@@ -5,12 +6,18 @@ import Main from "./main";
 function Layout() {
   return (
     <div>
-      <section id="header">
-        <Header />
-      </section>
-      <Main />
-      <Footer />
+      <Header />
+      <Content>
+        <Main />
+        <Footer />
+      </Content>
     </div>
   );
 }
 export default Layout;
+
+const Content = styled.div`
+  position: relative;
+  top: 100vh;
+  background: white;
+`;

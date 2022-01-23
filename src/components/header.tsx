@@ -8,40 +8,40 @@ import { Container, FlexContainer } from "./WrapperElements";
 
 function Header() {
   return (
-    <Container>
-      <StyledNav>
+    <Container id="header">
+      <Nav>
         <a href="#header">
           <img src={Helmet} alt="Logo" style={{ width: "20%" }} />
         </a>
 
         <FlexContainer>
-          <StyledUL>
+          <UL>
             <StyledA href="#contact">Kontaka oss</StyledA>
-          </StyledUL>
-          <StyledUL>
+          </UL>
+          <UL>
             <StyledA href="#services">Utbildningar</StyledA>
-          </StyledUL>
-          <StyledUL>
+          </UL>
+          <UL>
             <StyledA href="#imageCarousel">Galleri</StyledA>
-          </StyledUL>
-          <StyledUL>
+          </UL>
+          <UL>
             <StyledA href="#schedule" style={{ padding: 0 }}>
               Kommande utbildningar
             </StyledA>
-          </StyledUL>
+          </UL>
         </FlexContainer>
-      </StyledNav>
-      <StyledContainer>
-        <StyledLogoContainer>
+      </Nav>
+      <StyledHeader>
+        <LogoContainer>
           <img src={LogoWeb} alt="Logo" width="100%" />
-        </StyledLogoContainer>
-      </StyledContainer>
+        </LogoContainer>
+      </StyledHeader>
     </Container>
   );
 }
 export default Header;
 
-const StyledNav = styled.nav`
+const Nav = styled.nav`
   /* display: grid; */
   /* grid-template-columns: 3fr 1fr 1fr 1fr 1fr; */
   background: var(--color-gray);
@@ -60,7 +60,7 @@ const StyledNav = styled.nav`
   }
 `;
 
-const StyledUL = styled.ul`
+const UL = styled.ul`
   margin: 0;
   padding: 0;
 `;
@@ -75,7 +75,7 @@ const StyledA = styled.a`
   }
 `;
 
-const StyledContainer = styled.header`
+const StyledHeader = styled.header`
   background-image: url(${Scaffolding});
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,11 +83,13 @@ const StyledContainer = styled.header`
   width: 100%;
   height: 100vh;
 
+  position: fixed;
+  z-index: -1;
   /* display: flex; */
   /* justify-content: end; */
 `;
 
-const StyledLogoContainer = styled.div`
+const LogoContainer = styled.div`
   background: rgba(255, 255, 255, 0.351);
   display: flex;
   width: 50%;

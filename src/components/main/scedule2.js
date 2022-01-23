@@ -89,7 +89,7 @@ const Root = styled.div`
 const NavWithTabs = styled.nav`
   display: flex;
   align-items: flex-end;
-  margin-left: 1rem;
+  margin: 0 1rem;
   box-shadow: 0 0.5px 0 #959aa1;
 `;
 
