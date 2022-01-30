@@ -20,23 +20,29 @@ function Contact() {
         <StyledContactDetails>
           <p style={{ margin: "20px 0 10px 0" }}>
             <StyledA>
-              <img src={Person} alt="Symbol of person" width="5%" />
-            </StyledA>{" "}
-            Säljare/Samordnare Lotta von Braun
+              <span style={{ verticalAlign: "middle" }}>
+                <img src={Person} alt="Symbol of person" width="5%" />
+              </span>{" "}
+              Säljare/Samordnare Lotta von Braun
+            </StyledA>
           </p>
 
           <StyledP>
             <StyledA href="tel:+46739519360">
-              <img src={Phone} alt="Symbol of phone" width="5%" />
-            </StyledA>{" "}
-            +46 073-951 93 60
+              <span style={{ verticalAlign: "middle" }}>
+                <img src={Phone} alt="Symbol of phone" width="5%" />
+              </span>{" "}
+              +46 073-951 93 60
+            </StyledA>
           </StyledP>
 
           <StyledP>
             <StyledA href="mailto:lotta@vonbraunutbildning.se">
-              <img src={Email} alt="Symbol of email" width="5%" />
-            </StyledA>{" "}
-            lotta@vonbraunutbildning.se
+              <span style={{ verticalAlign: "middle" }}>
+                <img src={Email} alt="Symbol of email" width="5%" />
+              </span>{" "}
+              lotta@vonbraunutbildning.se
+            </StyledA>
           </StyledP>
         </StyledContactDetails>
       </StyledContactArea>
@@ -73,16 +79,19 @@ const StyledContactDetails = styled.div`
   }
 `;
 
+const StyledA = styled.a`
+  text-decoration: none;
+  color: black;
+`;
+
 const StyledP = styled.p`
   margin: 10px 0;
 
   :hover {
     transform: scale(1.06) translate(2%);
-    color: var(--focus-clr);
     cursor: pointer;
+    ${StyledA} {
+      color: var(--focus-clr);
+    }
   }
-`;
-
-const StyledA = styled.a`
-  vertical-align: middle;
 `;
