@@ -8,45 +8,6 @@ function createData(
   return { day, date, time, service, location };
 }
 
-const educations2 = [
-  createData(
-    "Allmän Ställningsutbildning",
-    "Måndag",
-    "24/1 - 22",
-    "08.00 - ca 15.00",
-    "Skene"
-  ),
-  createData(
-    "Heta Arbeten",
-    "Tisdag",
-    "25/1 - 22",
-    "08.00 - ca 15.00",
-    "Skene"
-  ),
-  createData(
-    "Sax & Bomlift FULLT",
-    "Onsdag",
-    "26/1 - 22",
-    "08.00 - ca 15.00",
-    "Skene"
-  ),
-  createData(
-    "Fallskyddsutbildning gr.",
-    "Torsdag",
-    "27/1 - 22",
-    "08.00 - ca 12.00",
-    "Skene"
-  ),
-  createData("Säkra lyft", "Torsdag", "27/1 - 22", "12.30 - ca 16.00", "Skene"),
-  createData(
-    "Sax & Bomlift",
-    "Fredag",
-    "28/1 - 22",
-    "08.00 - ca 15.00",
-    "Skene"
-  ),
-];
-
 const educations3 = [
   createData(
     "Allmän Ställningsutbildning",
@@ -130,4 +91,4 @@ const educations4 = [
   ),
 ];
 
-export { educations2, educations3, educations4 };
+export { educations3, educations4 };

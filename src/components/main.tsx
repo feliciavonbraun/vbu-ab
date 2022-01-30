@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import Contact from "./main/contact";
 import ImageCarousel from "./main/imageCarousel";
-import Scedule2 from "./main/scedule2";
-// import Schedule from "./main/schedule";
+import Schedule from "./main/schedule";
 import Services from "./main/services";
 import { Container } from "./WrapperElements";
 
@@ -14,8 +13,7 @@ function Main() {
         <Services />
         <TemporarilyRemovedInMobile>
           <ImageCarousel />
-          {/* <Schedule /> */}
-          <Scedule2 />
+          <Schedule />
         </TemporarilyRemovedInMobile>
       </Container>
     </StyledMain>
