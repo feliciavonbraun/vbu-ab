@@ -91,4 +91,42 @@ const educations4 = [
   ),
 ];
 
-export { educations3, educations4 };
+const educations9 = [
+  createData(
+    "Allmän Ställningsutbildning",
+    "Måndag",
+    "28/2 - 22",
+    "08.00 - ca 15.00",
+    "Varberg"
+  ),
+  createData(
+    "Heta Arbeten",
+    "Tisdag",
+    "1/3 - 22",
+    "08.00 - ca 15.00",
+    "Varberg"
+  ),
+  createData(
+    "Sax & Bomlift repetition",
+    "Onsdag",
+    "2/3 - 22",
+    "08.00 - ca 15.00",
+    "Varberg"
+  ),
+  createData(
+    "Fallskyddsutbildning gr.",
+    "Torsdag",
+    "3/3 - 22",
+    "08.00 - ca 12.00",
+    "Varberg"
+  ),
+  createData(
+    "Säkra lyft",
+    "Torsdag",
+    "3/3 - 22",
+    "12.30 - ca 15.30",
+    "Varberg"
+  ),
+];
+
+export { educations3, educations4, educations9 };
