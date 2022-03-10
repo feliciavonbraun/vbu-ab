@@ -1,18 +1,12 @@
 import { Container } from "../WrapperElements";
 import styled, { css } from "styled-components";
+import { useState } from "react";
 import {
   educations11,
   educations13,
   educations14,
 } from "../interfaces/educations";
-import React, { useState } from "react";
 
-// interface Data {
-//   week: string;
-//   weeklyEducations: any;
-// }
-
-// const allDatas: Data[] = [
 const allDatas = [
   {
     week: "v.11",
@@ -31,7 +25,7 @@ const allDatas = [
 function Scedule2() {
   const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabs = (index) => {
+  const handleTabs = (index: number) => {
     setActiveTab(index);
   };
 
@@ -93,12 +87,12 @@ const NavWithTabs = styled.nav`
   box-shadow: 0 0.5px 0 #959aa1;
 `;
 
-const Tab = styled.span`
+const Tab: any = styled.span`
   margin-right: 0.5rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
 
-  ${(p) =>
+  ${(p: any) =>
     p.active &&
     css`
       background: white;
@@ -112,11 +106,11 @@ const Table = styled.table`
   padding: 1rem;
 `;
 
-const TR = styled.tr`
+const TR: any = styled.tr`
   display: none;
   box-shadow: 0 -0.5px 0 #959aa1;
 
-  ${(p) =>
+  ${(p: any) =>
     p.active &&
     css`
       display: table-row;
