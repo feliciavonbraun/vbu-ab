@@ -2,15 +2,12 @@ import { BrowserRouter } from "react-router-dom";
 import ErrorBoundary from "./ErrorBoundary";
 import Layout from "./layout";
 
-function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <ErrorBoundary>
-          <Layout />
-        </ErrorBoundary>
-      </BrowserRouter>
-    </div>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <ErrorBoundary>
+      <Layout />
+    </ErrorBoundary>
+  </BrowserRouter>
+);
+
 export default App;
