@@ -8,79 +8,83 @@ function createData(
   return { day, date, time, service, location };
 }
 
-const educations14 = [
-  createData(
-    "Allmän Ställningsutbildning",
-    "Måndag",
-    "4/4 - 22",
-    "08.00 - ca 15.00",
-    "Göteborg"
-  ),
-  createData(
-    "Truck dag 1",
-    "Måndag",
-    "4/4 - 22",
-    "08.00 - ca 15.00",
-    "Göteborg"
-  ),
+const educations33 = [
   createData(
     "Heta Arbeten",
     "Tisdag",
-    "5/4 - 22",
+    "16/8 - 22",
     "08.00 - ca 15.00",
-    "Göteborg"
+    "Borås"
   ),
   createData(
-    "Truck dag 2",
+    "Sax & Bomlift",
+    "Onsdag",
+    "17/8 - 22",
+    "08.00 - ca 15.00",
+    "Borås"
+  ),
+  createData(
+    "Fallskyddsutbildning gr.",
+    "Torsdag",
+    "18/8 - 22",
+    "08.00 - ca 12.00",
+    "Borås"
+  ),
+];
+
+const educations24 = [
+  createData(
+    "Heta Arbeten",
     "Tisdag",
-    "5/4 - 22",
+    "14/6 - 22",
     "08.00 - ca 15.00",
     "Göteborg"
   ),
   createData(
     "Sax & Bomlift",
     "Onsdag",
-    "6/4 - 22",
+    "15/6 - 22",
     "08.00 - ca 15.00",
     "Göteborg"
   ),
   createData(
     "Fallskyddsutbildning gr.",
     "Torsdag",
-    "7/4 - 22",
+    "16/6 - 22",
     "08.00 - ca 12.00",
     "Göteborg"
   ),
   createData(
-    "Säkra lyft",
+    "Säkra lyft.",
     "Torsdag",
-    "7/4 - 22",
+    "16/6 - 22",
     "12.30 - ca 16.00",
     "Göteborg"
   ),
 ];
-const educations17 = [
+
+const educations25 = [
   createData(
-    "Heta Arbeten",
-    "Måndag",
-    "25/4 - 22",
-    "08.00 - ca 13.00",
-    "Lärarledd webb"
-  ),
-  createData(
-    "Sax & Bomlift repetition",
+    "Sax & Bomlift",
     "Onsdag",
-    "11/5 - 22",
-    "08.00 - ca 12.00",
-    "Lärarledd webb"
+    "22/6 - 22",
+    "08.00 - ca 15.00",
+    "Kalmar"
   ),
   createData(
     "Fallskyddsutbildning gr.",
     "Torsdag",
-    "11/5 - 22",
-    "12-30 - ca 16.00",
-    "Lärarledd webb"
+    "23/6 - 22",
+    "08:00 - ca 12.00",
+    "Kalmar"
+  ),
+  createData(
+    "Heta Arbeten",
+    "Onsdag",
+    "29/6 - 22",
+    "08.00 - ca 15.00",
+    "Kalmar"
   ),
 ];
 
-export { educations14, educations17 };
+export { educations33, educations25, educations24 };
