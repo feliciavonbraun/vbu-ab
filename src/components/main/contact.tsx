@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Email from "../../assets/email.svg";
-import Phone from "../../assets/phone.svg";
-import Person from "../../assets/person.svg";
+import Email from "../../assets/Icons/email.svg";
+import Phone from "../../assets/Icons/phone.svg";
+import Person from "../../assets/Icons/person.svg";
 import { Container } from "../WrapperElements";
 
 function Contact() {

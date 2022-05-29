@@ -1,10 +1,11 @@
 import { Box } from "@material-ui/core";
 import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-
-// import { Box, createStyles, makeStyles, Theme, } from "@mui/material";
+import ImageList from "@material-ui/core/ImageList";
+import ImageListItem from "@material-ui/core/ImageListItem";
 import gallerys from "../interfaces/galleryArray";
+import { Link } from "react-router-dom";
+import arrow from "../../assets/Icons/arrow.svg";
+import styled from "styled-components";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -34,16 +35,31 @@ function ImageCarousel() {
   const classes = useStyles();
 
   return (
-    <Box className={classes.root}>
-      <h2 id="imageCarousel">GALLERI</h2>
-      <GridList className={classes.gridList} cols={4}>
-        {gallerys.map((gallery, index) => (
-          <GridListTile key={index}>
-            <img src={gallery.image} alt={gallery.alt} />
-          </GridListTile>
-        ))}
-      </GridList>
-    </Box>
+    <Wrapper>
+      <Box className={classes.root}>
+        <h2 id="imageCarousel">GALLERI</h2>
+
+        <ImageList className={classes.gridList} cols={4}>
+          {gallerys.map((gallery, index) => (
+            <ImageListItem key={index}>
+              <img src={gallery.image} alt={gallery.alt} />
+            </ImageListItem>
+          ))}
+        </ImageList>
+
+        <StyledLink to="./gallery">
+          <img src={arrow} alt="" style={{ width: "60px" }} />
+        </StyledLink>
+      </Box>
+    </Wrapper>
   );
 }
 export default ImageCarousel;
+
+const Wrapper = styled.div`
+  margin: 30px 0;
+`;
+
+const StyledLink = styled(Link)`
+  margin-top: 30px;
+`;

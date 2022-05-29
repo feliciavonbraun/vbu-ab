@@ -6,7 +6,7 @@ const Container = styled.div<{
   /* width: 100%; */
   margin: 0;
   box-sizing: border-box;
-  ${({ mainPadding }) => mainPadding && `padding: 20px 40px`}
+  ${({ mainPadding }) => mainPadding && `padding: 30px 40px`}
 `;
 
 const FlexContainer = styled(Container)<{
