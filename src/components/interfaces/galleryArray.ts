@@ -18,6 +18,15 @@ import Gallery17 from "../../assets/gallery/gallery17.jpeg";
 import Gallery18 from "../../assets/gallery/gallery18.jpeg";
 import Gallery19 from "../../assets/gallery/gallery19.jpeg";
 import Gallery20 from "../../assets/gallery/gallery20.jpeg";
+import Gallery21 from "../../assets/gallery/gallery21.jpeg";
+import Gallery22 from "../../assets/gallery/gallery22.jpeg";
+import Gallery23 from "../../assets/gallery/gallery23.jpeg";
+import Gallery24 from "../../assets/gallery/gallery24.jpeg";
+import Gallery25 from "../../assets/gallery/gallery25.jpeg";
+import Gallery26 from "../../assets/gallery/gallery26.jpeg";
+import Gallery27 from "../../assets/gallery/gallery27.jpeg";
+import Gallery28 from "../../assets/gallery/gallery28.jpeg";
+import Gallery29 from "../../assets/gallery/gallery29.jpeg";
 
 export interface Gallery {
   image: any;
@@ -103,6 +112,42 @@ const gallerys: Gallery[] = [
   },
   {
     image: Gallery20,
+    alt: "",
+  },
+  {
+    image: Gallery21,
+    alt: "",
+  },
+  {
+    image: Gallery22,
+    alt: "",
+  },
+  {
+    image: Gallery23,
+    alt: "",
+  },
+  {
+    image: Gallery24,
+    alt: "",
+  },
+  {
+    image: Gallery25,
+    alt: "",
+  },
+  {
+    image: Gallery26,
+    alt: "",
+  },
+  {
+    image: Gallery27,
+    alt: "",
+  },
+  {
+    image: Gallery28,
+    alt: "",
+  },
+  {
+    image: Gallery29,
     alt: "",
   },
 ];

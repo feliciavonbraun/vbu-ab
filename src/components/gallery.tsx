@@ -1,8 +1,16 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import gallerys from "./interfaces/galleryArray";
 import { Container } from "./WrapperElements";
 
 function Gallery() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <Container mainPadding>
       <Root>

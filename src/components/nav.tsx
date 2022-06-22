@@ -15,16 +15,16 @@ function Header() {
 
         <FlexContainer>
           <UL>
-            <StyledA href="#contact">Kontaka oss</StyledA>
+            <StyledA href="./#contact">Kontaka oss</StyledA>
           </UL>
           <UL>
-            <StyledA href="#services">Utbildningar</StyledA>
+            <StyledA href="./#services">Utbildningar</StyledA>
           </UL>
           <UL>
-            <StyledA href="#imageCarousel">Galleri</StyledA>
+            <StyledA href="./gallery">Galleri</StyledA>
           </UL>
           <UL>
-            <StyledA href="#schedule" style={{ padding: 0 }}>
+            <StyledA href="./#schedule" style={{ padding: 0 }}>
               Kommande utbildningar
             </StyledA>
           </UL>
