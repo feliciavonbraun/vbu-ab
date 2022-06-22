@@ -10,6 +10,13 @@ function createData(
 
 const educations33 = [
   createData(
+    "Allmän Ställning",
+    "Måndag",
+    "15/8 - 22",
+    "08.00 - ca 16.00",
+    "Borås"
+  ),
+  createData(
     "Heta Arbeten",
     "Tisdag",
     "16/8 - 22",
@@ -30,37 +37,39 @@ const educations33 = [
     "08.00 - ca 12.00",
     "Borås"
   ),
+  createData("Säkra lyft", "Torsdag", "18/8 - 22", "12.30 - ca 16.00", "Borås"),
 ];
 
-const educations24 = [
+const educations34 = [
+  createData(
+    "Allmän Ställning",
+    "Måndag",
+    "22/8 - 22",
+    "08.00 - ca 16.00",
+    "Skene"
+  ),
   createData(
     "Heta Arbeten",
     "Tisdag",
-    "14/6 - 22",
+    "23/8 - 22",
     "08.00 - ca 15.00",
-    "Göteborg"
+    "Skene"
   ),
   createData(
     "Sax & Bomlift",
     "Onsdag",
-    "15/6 - 22",
+    "24/8 - 22",
     "08.00 - ca 15.00",
-    "Göteborg"
+    "Skene"
   ),
   createData(
     "Fallskyddsutbildning gr.",
     "Torsdag",
-    "16/6 - 22",
+    "25/8 - 22",
     "08.00 - ca 12.00",
-    "Göteborg"
+    "Skene"
   ),
-  createData(
-    "Säkra lyft.",
-    "Torsdag",
-    "16/6 - 22",
-    "12.30 - ca 16.00",
-    "Göteborg"
-  ),
+  createData("Säkra lyft", "Torsdag", "25/8 - 22", "12.30 - ca 16.00", "Skene"),
 ];
 
 const educations25 = [
@@ -87,4 +96,4 @@ const educations25 = [
   ),
 ];
 
-export { educations33, educations25, educations24 };
+export { educations33, educations25, educations34 };

@@ -4,14 +4,10 @@ import { useState } from "react";
 import {
   educations25,
   educations33,
-  educations24,
+  educations34,
 } from "../interfaces/educations";
 
 const allDatas = [
-  {
-    week: "v.24",
-    weeklyEducations: educations24,
-  },
   {
     week: "v.25/26",
     weeklyEducations: educations25,
@@ -19,6 +15,10 @@ const allDatas = [
   {
     week: "v.33",
     weeklyEducations: educations33,
+  },
+  {
+    week: "v.34",
+    weeklyEducations: educations34,
   },
 ];
 
