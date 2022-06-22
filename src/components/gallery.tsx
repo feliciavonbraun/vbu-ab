@@ -31,16 +31,20 @@ export default Gallery;
 const Root = styled.div`
   background-color: var(--color-white);
   margin-top: 70px;
+
+  @media screen and (max-width: 950px) {
+    margin-top: 30px;
+  }
 `;
 
 const GalleryContainer = styled.div`
   columns: 3;
   column-gap: 70px;
 
-  /* display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(3, 300px); */
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  @media screen and (max-width: 950px) {
+    columns: 2;
+    column-gap: 20px;
+  }
 `;
 
 const ImageWrapper = styled.div`

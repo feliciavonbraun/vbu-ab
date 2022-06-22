@@ -8,8 +8,8 @@ const MainPage = () => (
   <>
     <Contact />
     <Services />
+    <ImageCarousel />
     <TemporarilyRemovedInMobile>
-      <ImageCarousel />
       <Schedule />
     </TemporarilyRemovedInMobile>
   </>
