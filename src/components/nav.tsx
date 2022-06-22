@@ -25,7 +25,7 @@ function Header() {
             <StyledA href="./#services">Utbildningar</StyledA>
           </UL>
           <UL>
-            <StyledA href="/gallery">Galleri</StyledA>
+            <StyledLink to="./gallery">Galleri</StyledLink>
           </UL>
           <UL>
             <StyledA href="./#schedule" style={{ padding: 0 }}>
@@ -69,6 +69,16 @@ const UL = styled.ul`
 `;
 
 const StyledA = styled.a`
+  text-decoration: none;
+  color: var(--color-black);
+  padding-right: 20px;
+
+  :hover {
+    color: var(--focus-clr);
+  }
+`;
+
+const StyledLink = styled(Link)`
   text-decoration: none;
   color: var(--color-black);
   padding-right: 20px;
