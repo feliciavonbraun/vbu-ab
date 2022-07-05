@@ -1,17 +1,9 @@
 import { Container } from "../WrapperElements";
 import styled, { css } from "styled-components";
 import { useState } from "react";
-import {
-  educations25,
-  educations33,
-  educations34,
-} from "../interfaces/educations";
+import { educations33, educations34 } from "../interfaces/educations";
 
 const allDatas = [
-  {
-    week: "v.25/26",
-    weeklyEducations: educations25,
-  },
   {
     week: "v.33",
     weeklyEducations: educations33,

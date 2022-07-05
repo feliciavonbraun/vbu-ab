@@ -72,28 +72,4 @@ const educations34 = [
   createData("Säkra lyft", "Torsdag", "25/8 - 22", "12.30 - ca 16.00", "Skene"),
 ];
 
-const educations25 = [
-  createData(
-    "Sax & Bomlift",
-    "Onsdag",
-    "22/6 - 22",
-    "08.00 - ca 15.00",
-    "Kalmar"
-  ),
-  createData(
-    "Fallskyddsutbildning gr.",
-    "Torsdag",
-    "23/6 - 22",
-    "08:00 - ca 12.00",
-    "Kalmar"
-  ),
-  createData(
-    "Heta Arbeten",
-    "Onsdag",
-    "29/6 - 22",
-    "08.00 - ca 15.00",
-    "Kalmar"
-  ),
-];
-
-export { educations33, educations25, educations34 };
+export { educations33, educations34 };
